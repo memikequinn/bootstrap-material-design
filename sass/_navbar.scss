@@ -184,7 +184,7 @@
       padding: 0;
 
       .material-input:before,
-      &.is-focused .material-input:after {
+      #{if(&, "&", "*")}.is-focused .material-input:after {
         background-color: inherit;
       }
     }
